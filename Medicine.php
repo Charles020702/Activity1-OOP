@@ -6,23 +6,26 @@
         private $expirationdate;
         
         function getDose(){
-        $this->dose;
+        return $this->dose;
         }
         function getType(){
-        $this->type;
+        return $this->type;
         }
         function getExpirationDate(){
-        $this->expirationdate
+        return $this->expirationdate;
         }
-        function setDose(){
+
+        function setDose($dose){
         $this->dose = $dose;
         }
-        function setType(){
+        function setType($type){
         $this->type = $type;
         }
-        function setExpirationDate(){
+        function setExpirationDate($expirationdate){
         $this->expirationdate = $expirationdate;
         }
-    }
+
+       
+        }
 
 ?>

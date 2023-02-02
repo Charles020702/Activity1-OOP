@@ -7,9 +7,16 @@
         private $srp;
 
         function getName(){
-            $this->name;
-            $this->description;
-            $this->price;
+        return $this->name;
+        }
+        function getDescription(){
+        return  $this->description; 
+        }
+        function getPrice(){
+        return $this->price; 
+        }
+        function computeSRP(){
+        return $this->$srp * 1.5;
         }
 
         function setName($name = null){
@@ -19,7 +26,7 @@
         $this->description = $description; 
         }
         function setPrice($price = null){
-        $this->price = $price;
+        $this->price = $price;   
         }        
 
     }
