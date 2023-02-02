@@ -6,11 +6,21 @@
         private $price;
         private $srp;
 
-        function setName()
-        $this->name = $name;
-        $this->description = $description;
-        $this->price = $price;
+        function getName(){
+            $this->name;
+            $this->description;
+            $this->price;
+        }
 
+        function setName($name = null){
+        $this->name = $name;
+        }
+        function setDescription($description = null){
+        $this->description = $description; 
+        }
+        function setPrice($price = null){
+        $this->price = $price;
+        }        
 
     }
 
