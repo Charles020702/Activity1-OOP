@@ -1,31 +1,43 @@
-<?php require_once "Product.php"; 
+<?php
+    require_once "Product.php";
 
-    Class Medicine extends Product {
+    class Medicine extends Product{
         private $dose;
         private $type;
-        private $expirationdate;
+        private $expirationDate;
         
-        function getDose(){
-        return $this->dose;
-        }
-        function getType(){
-        return $this->type;
-        }
-        function getExpirationDate(){
-        return $this->expirationdate;
-        }
-
         function setDose($dose){
-        $this->dose = $dose;
-        }
-        function setType($type){
-        $this->type = $type;
-        }
-        function setExpirationDate($expirationdate){
-        $this->expirationdate = $expirationdate;
+            $this->dose = $dose;
         }
 
-       
+        function setType($type){
+            $this->type = $type;
         }
+
+        function setExpirationDate($expirationDate){
+            $this->expirationDate = $expirationDate;
+        }
+
+        function getType(){
+            return $this->type;
+         }
+
+        function getDose(){
+           return $this->dose;
+        }
+
+        function getExpirationDate(){
+            return $this->expirationDate;
+        }
+
+        function computeSRP(){
+           return $this->getPrice() * 2;
+        }
+
+        
+    }
+
+
+
 
 ?>
